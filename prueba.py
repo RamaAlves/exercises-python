@@ -1,0 +1,1 @@
+print ('hola informatorio 2022')
