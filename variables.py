@@ -54,7 +54,7 @@ print(type(palabra))
 para solucionar este error debo cambiar el tipo de dato de alguna de las 2 variables
 puedo utilizar: int(), str(), float(), bool() ..."""
 
-print ("para operar entre diferentes tipos de ")
+print ("para operar entre diferentes tipos de datos primero debo transformar todos los datos al mismo tipo")
 edad= 28
 palabra_2= "Hola mundo"
 suma = str(edad) + palabra_2
@@ -62,29 +62,39 @@ suma = str(edad) + palabra_2
 print(suma)
 
 
-#listas: se escriben entre corchetes. son un conjunto ordenado de elementos los mismos estan indizados
+#listas: se escriben entre corchetes. son un conjunto ordenado de elementos los mismos estan indizados. se puede modificar
 
 lista = [1,2,3,4,"auto",6]
-print("la lista es: ", lista)
+print("La lista contiene: ", lista)
 print(type(lista))
 print(f"Mi lista tiene {len(lista)} cantidad de elementos")
+lista[3]="perro"
+print(f"La lista contiene: {lista}")
 
-#tupla: se escribe entre (). es similar a las tuplas pero esta es inmutable
+#tupla: se escribe entre (). es similar a las listas pero esta es inmutable
 
 tupla = (1,2,3,5,"flores",6)
 print("la tupla es: ", tupla)
 print(type(tupla))
 print(f"Mi tupla tiene {len(tupla)} cantidad de elementos")
 
-#set: es un conjunto desordenados de elementos. no se pueden repetir los valores 
+#set: es un conjunto desordenados de elementos. no se pueden repetir los elementos
 
 set_ = {1,2,"rapido",5,80.5,2}
+print(set_)
 print(type(set_))
+
+#frozenset: es similar al set salvo que no se puede modificar, solo al inicializar
+
+fs=frozenset([1,2,3])
+print(fs)
+print(type(fs))
 
 #diccionarios: son pares clave valor (lo mas parecido a un json)
 
 diccionario = {1:"45", "b":20, "z":56.2}
 print(type(diccionario))
+print(f"dentro del diccionario con la clave 1 tengo el valor: {diccionario[1]}")
 
 
 #concatenacion de strings
