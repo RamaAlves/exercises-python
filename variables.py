@@ -61,29 +61,6 @@ suma = str(edad) + palabra_2
 
 print(suma)
 
-# operadores +, +=, -, -=, *, *=, //, /=, **, % 
-# operadores logicos ==, <=, >=, <, >, and, or, ^(xor), not 
-
-""" usos para xor
-    xor es el operador or pero solo exclusivo es decir, solo da verdadero si una de las dos afirmaciones es correcta
-    ademas el operador xor niega an nivel de bits
-    por ejemplo si quiero intercambiar dos variables sin utilizar una variable auxiliar puedo valerme de Xor
-    si hago a xor= b , me otorga la negacion de a y b y la almacena en a , luego b xor= a, que me otorga el valor que almacenaba a 
-    ya que si opero la negacion de a y b con b me queda a y esta se almacena en b, por ultimo al volver a realizar
-    a xor= b opero a que contiene la negacion de a y b con b que almacena en este momento el valor de a
-    el resultado de esto da b. Por lo tanto se intercambian los valores de a y b  
- """
-
-a= 5
-b= 3
-print(a,b)
-a^=b 
-b^=a 
-a^=b
-print(a,b)
-
-
-
 
 #listas: se escriben entre corchetes. son un conjunto ordenado de elementos los mismos estan indizados
 
@@ -108,3 +85,21 @@ print(type(set_))
 
 diccionario = {1:"45", "b":20, "z":56.2}
 print(type(diccionario))
+
+
+#concatenacion de strings
+
+string_1 = "Hola "
+string_2 = "informatorio!"
+concatenacion= string_1+string_2
+print(f"concatenacion de strings: '{string_1}'+'{string_2}' \n {concatenacion}")
+
+#multiplicacion de strings
+
+eco= "eco... "*3
+print ("multiplicacion de strings:\n", eco)
+
+#mezcla
+
+mezcla= eco + string_1 + "mundirijillo"
+print(f"Mezcla de strings: \n{mezcla}")
