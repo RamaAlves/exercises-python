@@ -7,9 +7,10 @@ entre100y200=0
 mas200=0
 recolectores=0
 
-agregarPersona = True
+agregarPersona = True #bandera
+cantidadDeRecolectores= int(input("ingrese la cantidad de recolectores:\t"))
 
-while agregarPersona:
+while agregarPersona:#con bandera #recolectores<cantidadDeRecolectores: #con acumulador
     colillas=int(input("ingrese la cantidad de colillas que juntó el recolector:\t"))
     recolectores+=1
     if colillas<100:

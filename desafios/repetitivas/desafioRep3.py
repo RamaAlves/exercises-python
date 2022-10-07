@@ -13,7 +13,7 @@ tiendaAbierta = True
 
 while tiendaAbierta:
     importeAPagar=int(input("ingrese el monto a pagar expresado en AR$:\t"))
-    codigoDescuento=int(str(input("ingrese el numero segun el codigo de descuento que corresponda:\n\t 1-Blanco\n\t2-Amarillo\n\t3-Rojo\n")).strip()[0])
+    codigoDescuento=int(str(input("ingrese el numero segun el codigo de descuento que corresponda:\n\t1-Blanco\n\t2-Amarillo\n\t3-Rojo\n")).strip()[0])
     
     if codigoDescuento ==1:
         print("No tiene descuento")
@@ -63,5 +63,5 @@ if verDetalleCaja=="y":
     for cliente in listaDeClientes:
         print("cliente:", cliente["cliente"], "\ntotal sin descuentos: $", cliente["subtotal"], "\ndescuento aplicado: ", cliente["descuento"], "\npagó: $", cliente["total"])
         totalEnCaja+=cliente["total"]
-        
+
     print("El total en caja al final del dia es: $", totalEnCaja)
