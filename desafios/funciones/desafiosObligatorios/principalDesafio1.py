@@ -4,24 +4,26 @@ Un trozo de chicle tarda 5 años en degradarse.
 Se solicita una función para que dado el ingreso de un elemento, se solicite tipo: Bolsa de plástico, botella PET, 
 envase tetrabrik o chicle, e imprima la cantidad de años que tarda en degradarse. """
 
+from desafioFunc1 import tiempoDeDegradacion
+
 elementosAnalizados=["bolsa de plastico", "botella de PET", "envase de tetrabrik", "chicle"]
 
-def tiempoDeDegradacion(tipo):
+""" def tiempoDeDegradacion(tipo):
     if tipo==1:
-        print(f"Una {elementosAnalizados[0]} tarda 150 años en degradarse")
+        return 150
     elif tipo==2:
-        print(f"Una {elementosAnalizados[1]} tarda 1000 años en degradarse")
+        return 1000
     elif tipo==3:
-        print(f"Un {elementosAnalizados[2]} tarda 30 años en degradarse")
+        return 30
     elif tipo==4:
-        print(f"Un {elementosAnalizados[3]} tarda 5 años en degradarse")
+        return 5
     else:
-        print("error de tipo")
-
+        return print("error de tipo")
+ """
 
 print("tipos de elementos analizados:")
 for elemento in elementosAnalizados:
     print(f"tipo {elementosAnalizados.index(elemento)+1}: {elemento}")
 elementoADescartar= int(input("que tipo de elemento desea descartar:\n(ingrese el tipo en numeros)\n"))
 
-tiempoDeDegradacion(elementoADescartar)
+print(f"Una {elementosAnalizados[elementoADescartar]} tarda {tiempoDeDegradacion(elementoADescartar)} años en degradarse") 
